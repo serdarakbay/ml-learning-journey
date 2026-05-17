@@ -8,9 +8,9 @@ data1={
     "Name":["Asensio","Skriniar","Kerem"],
         "Age":[30,31,27]
 }
-df=pd.DataFrame(data1,index=["gsyiSiken1","gsyiSiken2","gsyiSiken3"])
+df=pd.DataFrame(data1,index=["row1","row2","row3"])
 print(df)
-df["Job"]=["Uzaktan Siken","Coconut Siken","Mental Siken"]#add a column
-new_row=pd.DataFrame([{"Name":"Hayatbitti","Age":20,"Job":"Boş Takılma"}],index=["yokolduk"])
+df["Job"]=["Forward","Defender","Midfielder"]#add a column
+new_row=pd.DataFrame([{"Name":"Newplayer","Age":20,"Job":"Reserve"}],index=["row4"])
 df=pd.concat([df,new_row])
 print(df)
